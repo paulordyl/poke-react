@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+#root {
+  background-color: #EFEFEF;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 80%;
+  padding: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#show_error {
+  margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-container {
+  display: flex;
+  margin-top: 10px;
+  width: 80%;
+}
+
+input:focus {
+  border: 1px solid #22CBA8;
+  box-shadow: none!important;
+}
+
+.btn-search {
+  border: none;
+  padding-bottom: 10px 25px;
+  border-radius: 0 5px 5px 0;
+  background-color: #22CBA8;
+  color: #fff;
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.flex-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  padding: 30px 15px;
+  color: #406163;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-card {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cp-text span {
+  font-size: 16px;
+}
+
+.img-container {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:100px 30px 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  margin-top: -150px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.seperator {
+  border-color: #6EECB7 !important;
+  border-width: 10px;
+  border-radius: 5px;
+}
+
+.stats span.first {
+  border-right:1px solid #eee
+}
+
+.cp-text {
+  padding-right: 10px;
+  border-right: 1px solid #eee;
+  margin: 0;
+}
+
+.cp-text:last-child {
+  border: none;
+}
+
+#update_name{
+  text-transform: capitalize;
 }
